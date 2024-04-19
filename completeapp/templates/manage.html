@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 style="text-align: center;padding: 20px;">Manage Review</h1>
+    <div class="container">
+        <div class="card-deck">
+            % for subrev in uitems:
+                <% id = subrev['_id'] %>
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/modify" method="post">
+                            <h5 class="card-title">Product</h5>
+                            <p class="card-text">${ subrev['product'] }</p>
+                            <h5 class="card-title">Review</h5>
+                            <textarea class="card-text" id="review_${id}" name="modify" disabled="true">${ subrev['review'] }</textarea>
+                            <input type="hidden" name="id" value="${id}" >
+                            <button class="btn btn-success" id="saveButton_${id}" style="display: none;">Save</button>
+                        </form>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="btn btn-modify" onclick="toggleEdit('${id}')">Modify</button>
+                            <form action="/delete" method="post"> 
+                                <input type="hidden" name="id" value="${id}" >
+                                <button class="btn btn-delete">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            % endfor
+        </div>
+    </div>
+    <script>
+        function toggleEdit(id) {
+            var textField = document.getElementById("review_" + id);
+            var saveButton = document.getElementById("saveButton_"+id)
+
+            // Toggle the disabled attribute
+            textField.disabled = !textField.disabled;
+
+            // Toggle Save button visibility
+            saveButton.style.display = textField.disabled ? "block" : "block";
+
+            // Focus the text field if making it editable
+            if (!textField.disabled) {
+                textField.focus();
+            }
+        }
+    </script>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

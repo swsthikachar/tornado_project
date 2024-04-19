@@ -1,0 +1,62 @@
+2024-04-08 12:12:33,427 - DEBUG - Using proactor: IocpProactor
+2024-04-08 12:12:33,436 - INFO - Tornado server is listening
+2024-04-08 12:13:03,044 - DEBUG - Using proactor: IocpProactor
+2024-04-08 12:13:03,044 - INFO - Tornado server is listening
+2024-04-08 12:13:55,688 - DEBUG - Using proactor: IocpProactor
+2024-04-08 12:13:55,704 - INFO - Tornado server is listening
+2024-04-08 12:14:06,187 - INFO - 200 GET / (::1) 8.57ms
+2024-04-08 12:14:06,338 - INFO - 200 GET /static/style.css (::1) 87.99ms
+2024-04-08 12:14:06,757 - WARNING - 404 GET /static/login_2.jpg (::1) 6.02ms
+2024-04-08 12:14:06,909 - WARNING - 404 GET /favicon.ico (::1) 1.01ms
+2024-04-08 12:14:29,155 - INFO - Received POST request
+2024-04-08 12:14:29,155 - DEBUG - Received data: {'name': 'Swasthik achar', 'email': 'swasthi@gmail.com', 'password': '123456'}
+2024-04-08 12:14:29,482 - INFO - Data inserted successfully
+2024-04-08 12:14:29,483 - INFO - 302 POST / (::1) 329.82ms
+2024-04-08 12:14:29,608 - INFO - 200 GET /home (::1) 73.51ms
+2024-04-08 12:14:29,735 - WARNING - 404 GET /static/login_2.jpg (::1) 0.00ms
+2024-04-08 12:14:40,116 - INFO - 200 GET /add (::1) 3.17ms
+2024-04-08 12:14:40,188 - WARNING - 404 GET /static/login_2.jpg (::1) 1.00ms
+2024-04-08 12:14:53,915 - INFO - Received POST request
+2024-04-08 12:14:53,915 - DEBUG - Received product: instagram, email: swasthi@gmail.com, review: so many ads
+2024-04-08 12:14:54,027 - INFO - 302 POST /add (::1) 112.16ms
+2024-04-08 12:14:54,035 - INFO - 200 GET /add (::1) 0.00ms
+2024-04-08 12:14:54,090 - WARNING - 404 GET /static/login_2.jpg (::1) 1.93ms
+2024-04-08 12:15:00,803 - INFO - 200 GET /manage (::1) 28.97ms
+2024-04-08 12:15:07,379 - INFO - Modification successful
+2024-04-08 12:15:07,380 - INFO - 302 POST /modify (::1) 43.45ms
+2024-04-08 12:15:07,466 - INFO - 304 GET /manage (::1) 86.79ms
+2024-04-08 12:35:53,707 - INFO - c:\Users\HP\OneDrive\Documents\internship_Quick_Metrix\tornadoprojects\completeapp\main.py modified; restarting server
+2024-04-08 12:35:56,342 - DEBUG - Using proactor: IocpProactor
+2024-04-08 12:35:56,342 - INFO - Tornado server is listening
+2024-04-08 12:36:00,658 - DEBUG - Using proactor: IocpProactor
+2024-04-08 12:36:20,117 - INFO - 200 GET / (::1) 0.00ms
+2024-04-08 12:36:21,908 - INFO - 304 GET / (::1) 0.00ms
+2024-04-08 12:36:23,447 - INFO - 304 GET / (::1) 0.00ms
+2024-04-08 12:36:23,637 - INFO - 304 GET / (::1) 0.00ms
+2024-04-08 12:36:25,958 - INFO - 200 GET /signin (::1) 2.43ms
+2024-04-08 12:36:36,092 - INFO - User successfully signed in
+2024-04-08 12:36:36,092 - INFO - 302 POST /signin (::1) 323.85ms
+2024-04-08 12:36:36,182 - INFO - 200 GET /home (::1) 57.31ms
+2024-04-08 12:36:44,076 - INFO - 304 GET /add (::1) 1.73ms
+2024-04-08 12:37:05,001 - INFO - Received POST request
+2024-04-08 12:37:05,002 - DEBUG - Received product: whatsapp, email: abc@gmail.com, review: new update is not good
+2024-04-08 12:37:05,062 - ERROR - Error in AddHandler POST request: Object of type ObjectId is not JSON serializable
+2024-04-08 12:37:05,062 - INFO - 200 POST /add (::1) 60.54ms
+2024-04-08 12:38:29,162 - DEBUG - Using proactor: IocpProactor
+2024-04-08 12:38:29,166 - INFO - Tornado server is listening
+2024-04-08 12:38:43,909 - INFO - Received POST request
+2024-04-08 12:38:43,909 - DEBUG - Received product: whatsapp, email: abc@gmail.com, review: new update is not good
+2024-04-08 12:38:44,172 - ERROR - Error in AddHandler POST request: Object of type ObjectId is not JSON serializable
+2024-04-08 12:38:44,174 - INFO - 200 POST /add (::1) 265.38ms
+2024-04-08 12:38:46,321 - INFO - 200 GET /add (::1) 1.74ms
+2024-04-08 12:38:49,284 - INFO - 200 GET /home (::1) 97.30ms
+2024-04-08 12:38:57,736 - INFO - 304 GET /add (::1) 0.99ms
+2024-04-08 12:39:06,812 - INFO - Received POST request
+2024-04-08 12:39:06,812 - DEBUG - Received product: twitter, email: abc@gmail.com, review: khhgckgfxcjgfhg
+2024-04-08 12:39:06,885 - ERROR - Error in AddHandler POST request: Object of type ObjectId is not JSON serializable
+2024-04-08 12:39:06,885 - INFO - 200 POST /add (::1) 72.43ms
+2024-04-08 12:39:09,810 - INFO - 200 GET /add (::1) 0.00ms
+2024-04-08 12:39:17,060 - INFO - 200 GET /home (::1) 102.31ms
+2024-04-08 12:40:47,684 - INFO - c:\Users\HP\OneDrive\Documents\internship_Quick_Metrix\tornadoprojects\completeapp\main.py modified; restarting server
+2024-04-08 12:40:48,905 - DEBUG - Using proactor: IocpProactor
+2024-04-08 12:40:48,921 - INFO - Tornado server is listening
